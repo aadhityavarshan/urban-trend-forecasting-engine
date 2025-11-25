@@ -1,0 +1,33 @@
+[project]
+name = "urban-trend-forecasting-engine"
+version = "0.1.0"
+description = "Pipeline to predict rising urban venues using multi source data."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas",
+  "numpy",
+  "scikit-learn",
+  "requests",
+  "pydantic",
+  "sqlalchemy",
+  "google-cloud-bigquery",
+  "prefect",
+  "fastapi",
+  "uvicorn[standard]",
+  "python-dotenv",
+  "jupyter",
+  "streamlit"
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "isort",
+  "ruff",
+  "pytest"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
