@@ -1,34 +1,121 @@
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+gcp-creds/
+*.json
+!pyproject.toml
+!package.json
+
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
 *.pdb
 *.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.so
+.Python
 
-# Virtual environments
+# Virtual Environments
 .venv/
-env/
 venv/
+env/
+ENV/
+.venv*
+pip-log.txt
+pip-delete-this-directory.txt
 
-# OS / Editor junk
-.DS_Store
-.idea/
-.vscode/
-Thumbs.db
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Your data files
+# Data
 data/raw/
 data/interim/
 data/processed/
+*.parquet
+*.csv
+*.xlsx
+*.xls
 
-# Local environment & secrets
-.env
-gcp-creds/
-*.json
+# Models & Artifacts
+models/
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.pt
+*.pth
+*.onnx
 
-# Cache
-.cache/
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+ehthumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+*.lnk
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+.nox/
+
+# Streamlit
+.streamlit/
+streamlit_cache/
+
+# dbt
+dbt_packages/
+target/
+
+# Build & Distribution
+*.dist-info/
+*.egg-info/
+
+# Temporary Files
+*.tmp
+*.temp
+tmp/
+temp/
+*.log
+
+# IDE extensions
+.pylintrc
+.mypy.ini
+
+# Node (if using frontend tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+**/Thumbs.db
+**/.DS_Store

@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
 from src.ingest.yelp_client import ingest_business, ingest_reviews       
 from src.utils.logging import get_logger 
 
